@@ -1,1 +1,61 @@
-oh no
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Údržba webu</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+    <link rel="stylesheet" href="/style.css">
+    <style>
+        .maintenance-container {
+            background-color: #444;
+            padding: 2.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+            max-width: 600px;
+            width: 100%;
+            text-align: center;
+            margin: 2rem 0;
+        }
+
+        .maintenance-container h1 {
+            color: #FF6347;
+            margin-bottom: 1rem;
+            font-size: 2rem;
+        }
+
+        .maintenance-container p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+
+        .sticker-img {
+            width: 150px;
+            max-width: 100%;
+            height: auto;
+            margin: 0 auto 1.5rem auto;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h2>Údržba webu</h2>
+</header>
+
+<main>
+    <section class="maintenance-container">
+        <img src="/Flustered.png" alt="Probíhá údržba" class="sticker-img">
+
+        <h1>Vrátím se brzy!</h1>
+        <p>Tento web právě prochází plánovanou údržbou. Očekávám, že bude v rámci několika dní opět online.</p>
+        <p>Děkuji za pochopení!</p>
+    </section>
+</main>
+
+<?php include 'includes/footer.php'; ?>
+
+</body>
+</html>
