@@ -1,0 +1,152 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    background-color: #333;
+    color: #eee;
+}
+
+header {
+    background-color: #444;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.about p {
+    font-size: 1.2rem;
+    line-height: 1.4;
+}
+
+.event-list {
+    margin: 20px 0;
+}
+
+.event-list ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px;
+}
+
+.event-list li {
+    background-color: #444;
+    color: white;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.event-list a {
+    color: #FF6347;
+    text-decoration: none;
+}
+
+.event-list a:hover {
+    color: #FF4500;
+}
+
+.social-links, .contact {
+    margin: 20px 0;
+}
+
+.social-links a, .contact a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #FF6347;
+    font-size: 1.2rem;
+}
+
+.social-links a:hover, .contact a:hover {
+    color: #FF4500;
+}
+
+footer {
+    background-color: #444;
+    color: white;
+    padding: 10px 20px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    font-size: 1rem;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.footer-center {
+    text-align: center;
+    flex: 1;
+}
+
+.footer-right {
+    position: inherit;
+    right: 20px;
+}
+
+footer a.privacy-link {
+    color: #FF6347;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+footer a.privacy-link:hover {
+    color: #FF4500;
+    text-decoration: underline;
+}
+.author {
+    font-weight: bold;
+    color: #FF6347;
+}
+
+@media (max-width: 600px) {
+    body, html {
+        font-size: 0.9rem;
+    }
+
+    header {
+        font-size: 1.3rem;
+    }
+
+    main {
+        font-size: 1.1rem;
+    }
+
+    .about p {
+        font-size: 1.0rem;
+    }
+
+    .social-links a, .contact a {
+        display: block;
+        margin: 10px 0;
+        font-size: 1.1rem;
+    }
+
+    footer {
+        font-size: 0.9rem;
+        flex-direction: column;
+    }
+}
